@@ -1,10 +1,10 @@
 <?php
 
 //main connection file for both admin & front end
-$servername = "localhost"; //server
-$username = "root"; //username
-$password = ""; //password
-$dbname = "onlinefoodphp";  //database
+$servername = "b1najb3wnu0acotynxfu-mysql.services.clever-cloud.com"; //server
+$username = "ucfmtshsbemmz1z1"; //username
+$password = "hmeCl85GqDfxF1yyyXoE"; //password
+$dbname = "b1najb3wnu0acotynxfu";  //database
 
 // Create connection
 $db = mysqli_connect($servername, $username, $password, $dbname); // connecting 

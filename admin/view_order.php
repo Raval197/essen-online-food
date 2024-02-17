@@ -250,8 +250,6 @@ popUpWin = open(URLStr,'popUpWin', 'toolbar=no,location=no,directories=no,status
                 </div>
               
             </div>
-          
-            <footer class="footer"> © 2022 - Online Food Ordering System </footer>
         
         </div>
        

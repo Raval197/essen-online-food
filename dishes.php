@@ -62,9 +62,10 @@ include_once 'product-action.php';
                 <div class="container">
                     <ul class="row links">
                       
-                        <li class="col-xs-12 col-sm-4 link-item"><span>1</span><a href="restaurants.php">Choose Restaurant</a></li>
-                        <li class="col-xs-12 col-sm-4 link-item active"><span>2</span><a href="dishes.php?res_id=<?php echo $_GET['res_id']; ?>">Pick Your favorite food</a></li>
-                        <li class="col-xs-12 col-sm-4 link-item"><span>3</span><a href="#">Order and Pay</a></li>
+                        <li class="col-xs-12 col-sm-3 link-item"><span>1</span><a href="restaurants.php">Choose Restaurant</a></li>
+                        <li class="col-xs-12 col-sm-3 link-item active"><span>2</span><a href="dishes.php?res_id=<?php echo $_GET['res_id']; ?>">Pick Your favorite food</a></li>
+                        <li class="col-xs-12 col-sm-3 link-item"><span>3</span><a href="#">Address</a></li>
+                        <li class="col-xs-12 col-sm-3 link-item"><span>4</span><a href="#">Order and Pay</a></li>
                         
                     </ul>
                 </div>

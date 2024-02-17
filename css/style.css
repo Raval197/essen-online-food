@@ -288,19 +288,19 @@ hr {
 }
 
 .b-l {
-  border-left: 1px solid #edeed;
+  border-left: 1px solid #edeeed;
 }
 
 .b-r {
-  border-left: 1px solid #edeed;
+  border-left: 1px solid #edeeed;
 }
 
 .b-t {
-  border-top: 1px solid #edeed;
+  border-top: 1px solid #edeeed;
 }
 
 .b-b {
-  border-bottom: 1px solid #edeed;
+  border-bottom: 1px solid #edeeed;
 }
 
 .b-b-0 {
@@ -834,7 +834,7 @@ hr {
 }
 
 @media (max-width: 543px) {
-  ...;
+  
 }
 
 @media (min-width: 544px) and (max-width: 767px) {
@@ -895,7 +895,7 @@ hr {
 }
 
 @media (min-width: 1200px) {
-  ...;
+  
 }
 
 /*============================================
@@ -1012,9 +1012,7 @@ How it works section
   color: #fff;
 }
 
-/*-----------------------------------  
-Steps
------------------------------------*/
+
 
 .how-it-works p {
   color: #9c9da5;
@@ -1113,7 +1111,7 @@ Steps
 }
 
 @media (min-width: 1200px) {
-  ...;
+
 }
 
 /****** featured restaurants block *******/

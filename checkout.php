@@ -19,7 +19,6 @@ if(empty($_SESSION["user_id"]))
 	header('location:login.php');
 }
 else{
-
 										  
 												foreach ($_SESSION["cart_item"] as $item)
 												{
@@ -83,8 +82,7 @@ else{
 							}
 						else
 							{
-									
-									
+										
 										echo  '<li class="nav-item"><a href="your_orders.php" class="nav-link active">My Orders</a> </li>';
 									echo  '<li class="nav-item"><a href="logout.php" class="nav-link active">Logout</a> </li>';
 							}
@@ -101,12 +99,13 @@ else{
                 <div class="container">
                     <ul class="row links">
                       
-                        <li class="col-xs-12 col-sm-4 link-item"><span>1</span><a href="restaurants.php">Choose Restaurant</a></li>
-                        <li class="col-xs-12 col-sm-4 link-item "><span>2</span><a href="#">Pick Your favorite food</a></li>
-                        <li class="col-xs-12 col-sm-4 link-item active" ><span>3</span><a href="checkout.php">Order and Pay</a></li>
+                        <li class="col-xs-12 col-sm-3 link-item"><span>1</span><a href="restaurants.php">Choose Restaurant</a></li>
+                        <li class="col-xs-12 col-sm-3 link-item "><span>2</span><a href="#">Pick Your favorite food</a></li>
+                        <li class="col-xs-12 col-sm-3 link-item active" ><span>3</span><a href="#">Dilivary Address</a></li>
+                        <li class="col-xs-12 col-sm-3 link-item " ><span>4</span><a href="checkout.php">Order and Pay</a></li>
                     </ul>
                 </div>
-            </div>
+            </div>s
 			
                 <div class="container">
                  
@@ -130,47 +129,36 @@ else{
                                 <div class="col-sm-12">
                                     <div class="cart-totals margin-b-20">
                                         <div class="cart-totals-title">
-                                            <h4>Cart Summary</h4> </div>
+                                            <h4>Address Iformation</h4> </div>
                                         <div class="cart-totals-fields">
 										
-                                            <table class="table">
+                                        <table class="table">
 											<tbody>
-                                          
-												 
-											   
                                                     <tr>
-                                                        <td>Cart Subtotal</td>
-                                                        <td> <?php echo "$".$item_total; ?></td>
+                                                        <td>State:</td>
+                                                        <td> <input type="text"></td>
+                                                    </tr>
+                                                    
+                                                    <tr>
+                                                        <td>city:</td>
+                                                        <td> <input type="text"></td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Delivery Charges</td>
-                                                        <td>Free</td>
+                                                        <td>address:</td>
+                                                        <td><textarea name="addresh" id="" cols="30" rows="3"></textarea></td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="text-color"><strong>Total</strong></td>
-                                                        <td class="text-color"><strong> <?php echo "$".$item_total; ?></strong></td>
+                                                        <td>zipcode:</td>
+                                                        <td><input type="text"></td>
                                                     </tr>
                                                 </tbody>
-												
-												
-												
-												
                                             </table>
+                                     
                                         </div>
                                     </div>
                                     <div class="payment-option">
-                                        <ul class=" list-unstyled">
-                                            <li>
-                                                <label class="custom-control custom-radio  m-b-20">
-                                                    <input name="mod" id="radioStacked1" checked value="COD" type="radio" class="custom-control-input"> <span class="custom-control-indicator"></span> <span class="custom-control-description">Cash on Delivery</span>
-                                                </label>
-                                            </li>
-                                            <li>
-                                                <label class="custom-control custom-radio  m-b-10">
-                                                    <input name="mod"  type="radio" value="paypal" disabled class="custom-control-input"> <span class="custom-control-indicator"></span> <span class="custom-control-description">Paypal <img src="images/paypal.jpg" alt="" width="90"></span> </label>
-                                            </li>
-                                        </ul>
-                                        <p class="text-xs-center"> <input type="submit" onclick="return confirm('Do you want to confirm the order?');" name="submit"  class="btn btn-success btn-block" value="Order Now"> </p>
+                                        <p class="text-xs-center"> <a href="./address.php" name="submit"  class="btn btn-success btn-block" value="Continue"></a>
+                                        </p>
                                     </div>
 									</form>
                                 </div>
